@@ -6,7 +6,7 @@ import {
   teamsHighContrastTheme,
   tokens,
 } from "@fluentui/react-components";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   HashRouter as Router,
   Navigate,
@@ -15,25 +15,17 @@ import {
 } from "react-router-dom";
 import { app } from "@microsoft/teams-js";
 import { useTeamsUserCredential } from "@microsoft/teamsfx-react";
-import {
-  BearerTokenAuthProvider,
-  createApiClient,
-  TeamsUserCredential,
-} from "@microsoft/teamsfx";
+// import {
+//   BearerTokenAuthProvider,
+//   createApiClient,
+//   TeamsUserCredential,
+// } from "@microsoft/teamsfx";
 import Privacy from "./Privacy";
 import TermsOfUse from "./TermsOfUse";
 import Tab from "./Tab";
 import TabConfig from "./TabConfig";
 import { TeamsFxContext } from "./Context";
 import config from "./sample/lib/config";
-
-async function test() {
-  const credential = new TeamsUserCredential(config);
-
-  const x = await credential.getUserInfo();
-
-  return x;
-}
 
 /**
  * The main app which handles the initialization and routing

@@ -1,8 +1,8 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Image } from "@fluentui/react-components";
 import "./Welcome.css";
-import { useData } from "@microsoft/teamsfx-react";
-import { TeamsFxContext } from "../Context";
+// import { useData } from "@microsoft/teamsfx-react";
+// import { TeamsFxContext } from "../Context";
 
 export function Welcome(props: {
   showFunction?: boolean;
